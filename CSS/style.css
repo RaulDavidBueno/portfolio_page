@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Nunito:ital,wght@0,400;0,500;1,300;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main_firstPart {
+    background-color: #111C2E;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+    width: 100%;
+    height: 98vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main_firstPart_container {
+      width: 60%; }
+      .main_firstPart_container_Navbar {
+        z-index: 10;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 20px;
+        height: min-content;
+        align-items: center; }
+        .main_firstPart_container_Navbar h3 {
+          color: white;
+          font-family: "Kanit", sans-serif;
+          font-size: 2vw; }
+        .main_firstPart_container_Navbar_buttons {
+          list-style: none;
+          display: flex; }
+          .main_firstPart_container_Navbar_buttons li {
+            margin-inline: 10px; }
+            .main_firstPart_container_Navbar_buttons li a {
+              text-decoration: none;
+              outline: none; }
+              .main_firstPart_container_Navbar_buttons li a span {
+                color: gray;
+                font-family: "Nunito", sans-serif;
+                font-weight: 500;
+                font-size: 1vw; }
+                .main_firstPart_container_Navbar_buttons li a span:hover {
+                  color: #505050;
+                  transition: 500ms; }
+      .main_firstPart_container::after {
+        content: '';
+        background-color: #0B9EF2;
+        height: 21vw;
+        width: 40vw;
+        clip-path: polygon(0 79%, 100% 0, 100% 80%, 26% 100%);
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        bottom: 5vw; }
+      .main_firstPart_container::before {
+        content: '';
+        background-color: #FBFBFB;
+        height: 21vw;
+        width: 40vw;
+        clip-path: polygon(0 79%, 100% 0, 100% 80%, 26% 100%);
+        position: absolute;
+        z-index: 2;
+        right: 20vw;
+        bottom: -4vw;
+        transform: scale(2); }
+      .main_firstPart_container_presentation {
+        height: min-content;
+        margin-top: 157px; }
+        .main_firstPart_container_presentation h3 {
+          color: white;
+          font-family: "Nunito", sans-serif;
+          font-weight: 400;
+          font-size: 3vw;
+          transform: translateX(-5px); }
+          .main_firstPart_container_presentation h3::after {
+            content: '';
+            color: #0B9EF2;
+            animation-name: escribir;
+            animation-duration: 6s;
+            animation-iteration-count: infinite; }
+        .main_firstPart_container_presentation p {
+          font-family: "Nunito", sans-serif;
+          font-weight: 300;
+          color: white;
+          font-size: 1.5vw; }
+        .main_firstPart_container_presentation_buttonServices {
+          background-color: transparent;
+          padding: 25px;
+          margin-top: 50px;
+          border: none;
+          width: max-content;
+          outline: 2px solid #0B9EF2;
+          border-radius: 5px;
+          display: block;
+          text-decoration: none; }
+          .main_firstPart_container_presentation_buttonServices:hover {
+            cursor: pointer;
+            outline: 2px solid #2e6e92;
+            color: #2e6e92 !important; }
+            .main_firstPart_container_presentation_buttonServices:hover span {
+              color: #2e6e92; }
+          .main_firstPart_container_presentation_buttonServices span {
+            color: #0B9EF2;
+            font-family: "Nunito", sans-serif;
+            font-weight: 400;
+            font-size: 1.3vw;
+            text-decoration: none; }
+
+@keyframes escribir {
+  0% {
+    content: ''; }
+  2% {
+    content: 'E|'; }
+  4% {
+    content: 'EX'; }
+  6% {
+    content: 'EXP|'; }
+  8% {
+    content: 'EXPE'; }
+  10% {
+    content: 'EXPER|'; }
+  12% {
+    content: 'EXPERI'; }
+  14% {
+    content: 'EXPERIE|'; }
+  16% {
+    content: 'EXPERIEN'; }
+  18% {
+    content: 'EXPERIENC|'; }
+  20% {
+    content: 'EXPERIENCI'; }
+  22% {
+    content: 'EXPERIENCIA|'; }
+  24% {
+    content: 'EXPERIENCIAS'; }
+  26% {
+    content: 'EXPERIENCIAS D|'; }
+  28% {
+    content: 'EXPERIENCIAS DI'; }
+  30% {
+    content: 'EXPERIENCIAS DIG|'; }
+  32% {
+    content: 'EXPERIENCIAS DIGI'; }
+  34% {
+    content: 'EXPERIENCIAS DIGIT|'; }
+  36% {
+    content: 'EXPERIENCIAS DIGITA'; }
+  38% {
+    content: 'EXPERIENCIAS DIGITAL|'; }
+  40% {
+    content: 'EXPERIENCIAS DIGITALE'; }
+  42% {
+    content: 'EXPERIENCIAS DIGITALES|'; } }
+
+.main_pageBody {
+  width: 60%; }

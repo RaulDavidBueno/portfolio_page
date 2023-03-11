@@ -1,0 +1,213 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &_firstPart{
+        background-color: $color_dark_Blue;
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+        width: 100%;
+        height: 98vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_container{
+            width: 60%;
+
+            &_Navbar{
+            z-index: 10;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-top: 20px;
+            height: min-content;
+            align-items: center;
+            h3{
+                color: white;
+                font-family: $font_tittle;
+                font-size: 2vw;
+            }
+            &_buttons{
+                list-style: none;
+                display: flex;
+              
+                li{
+                    margin-inline: 10px;
+                    a{
+                        text-decoration: none;
+                        outline: none;
+                        span{
+                            color: gray;
+                            font-family: $font_regular;
+                            font-weight: 500;
+                            font-size: 1vw;
+                            &:hover{
+                                
+                                color: rgb(80, 80, 80);
+                                transition: 500ms;
+                            }
+                        }
+                    }
+                  
+                }
+            }
+        }
+      
+        &::after{
+            content: '';
+            background-color: $color_cyan;
+            height: 21vw;
+            width: 40vw;
+            clip-path: polygon(0 79%, 100% 0, 100% 80%, 26% 100%);
+
+
+            position: absolute;
+            z-index: 3;
+            right: 0;
+            bottom: 5vw;
+            
+        }
+        &::before{
+            content: '';
+            background-color: $color_white;
+            height: 21vw;
+            width: 40vw;
+            clip-path: polygon(0 79%, 100% 0, 100% 80%, 26% 100%);
+
+            position: absolute;
+            z-index: 2;
+            right: 20vw;
+            bottom: -4vw;
+            transform: scale(2);
+            }
+
+            &_presentation{
+                height: min-content;
+                margin-top: 157px;  
+                h3{
+                    color: white;
+                    font-family: $font_regular;
+                    font-weight: 400;
+                    font-size: 3vw;
+                    transform: translateX(-5px);
+                    
+                    &::after{
+                        content: '';
+                        color: $color_cyan;
+                        animation-name: escribir;
+                        animation-duration: 6s;
+                        animation-iteration-count: infinite;
+                    }
+                }
+                p{
+                    font-family: $font_regular;
+                    font-weight: 300;
+                    color: white;
+                    font-size: 1.5vw;
+                }
+                &_buttonServices{
+                    background-color: transparent;
+                    padding: 25px;
+                    margin-top: 50px;
+                    border: none;
+                    width: max-content;
+                    outline: 2px solid $color_cyan;
+                    border-radius: 5px ;
+                    display: block;
+                    text-decoration: none;
+                    &:hover{
+                        cursor: pointer;
+                        outline: 2px solid $color_cyanFade;
+                        color: $color_cyanFade !important;
+                        span{
+                            color: $color_cyanFade;
+                        }
+                    }
+                  
+
+                    span{
+                        color: $color_cyan;
+                       
+                        font-family: $font_regular;
+                        font-weight: 400;
+                        font-size: 1.3vw;
+                        text-decoration: none;
+                      
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
+
+@keyframes escribir {
+    0%{
+        content: '';
+    }
+   
+    2%{
+        content: 'E|';
+    }
+    4%{
+        content: 'EX';
+    }
+    6%{
+        content: 'EXP|';
+    }
+    8%{
+        content: 'EXPE';
+    }
+    10%{
+        content: 'EXPER|';
+    }
+    12%{
+        content: 'EXPERI';
+    }
+    14%{
+        content: 'EXPERIE|';
+    }
+    16%{
+        content: 'EXPERIEN';
+    }
+    18%{
+        content: 'EXPERIENC|';
+    }
+    20%{
+        content: 'EXPERIENCI';
+    }
+    22%{
+        content: 'EXPERIENCIA|';
+    }
+    24%{
+        content: 'EXPERIENCIAS';
+    }
+    26%{
+        content: 'EXPERIENCIAS D|';
+    }
+    28%{
+        content: 'EXPERIENCIAS DI';
+    }
+    30%{
+        content: 'EXPERIENCIAS DIG|';
+    }
+    32%{
+        content: 'EXPERIENCIAS DIGI';
+    }
+    34%{
+        content: 'EXPERIENCIAS DIGIT|';
+    }
+    36%{
+        content: 'EXPERIENCIAS DIGITA';
+    }
+    38%{
+        content: 'EXPERIENCIAS DIGITAL|';
+    }
+    40%{
+        content: 'EXPERIENCIAS DIGITALE';
+    }
+    42%{
+        content: 'EXPERIENCIAS DIGITALES|';
+    }
+    
+}

@@ -1,0 +1,2 @@
+Aparecer en scroll:
+API: https://scroll-out.github.io/guide.html#what-is-scrollout
