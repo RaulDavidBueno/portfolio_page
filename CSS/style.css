@@ -234,22 +234,282 @@
       color: #2e6e92; }
   .main_pageBody_billQuotes {
     background-color: #111C2E;
-    width: 99.1vw;
+    width: 98.9vw;
     height: 60vh;
-    z-index: -10;
+    z-index: -11;
     display: flex;
+    margin-top: 91px;
     flex-direction: column; }
     .main_pageBody_billQuotes--whiteBarUp {
-      z-index: -9;
+      z-index: -8;
       clip-path: polygon(0 0, 100% 0%, 100% 10%, 0 50%);
       background-color: white;
-      width: 99.1vw;
+      width: 98.9vw;
       height: 34vh;
       transform: translateY(-27px); }
     .main_pageBody_billQuotes--whiteBardown {
-      z-index: -9;
+      z-index: -8;
       clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 90%);
       background-color: white;
-      width: 99.1vw;
+      width: 98.9vw;
       height: 34vh;
       transform: translateY(27px); }
+    .main_pageBody_billQuotes--TextContainer {
+      width: 100%;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute; }
+      .main_pageBody_billQuotes--TextContainer p {
+        color: white;
+        font-family: "Nunito", sans-serif;
+        font-size: 3vw;
+        max-width: 50vw;
+        font-weight: 300; }
+      .main_pageBody_billQuotes--TextContainer span {
+        color: #0B9EF2;
+        font-family: "Nunito", sans-serif;
+        font-size: 2vw; }
+      .main_pageBody_billQuotes--TextContainer::after {
+        content: '';
+        z-index: -9;
+        clip-path: polygon(100% 100%, 22% 100%, 0 79%, 100% 0);
+        background-color: #0B9EF2;
+        width: 40vw;
+        height: 21vh;
+        position: absolute;
+        top: 34vh;
+        right: 0; }
+      .main_pageBody_billQuotes--TextContainer::before {
+        content: '';
+        z-index: -10;
+        clip-path: polygon(100% 100%, 22% 100%, 0 79%, 100% 0);
+        background-color: white;
+        width: 43vw;
+        height: 22vh;
+        position: absolute;
+        top: 33vh;
+        right: 0vw; }
+  .main_pageBody--marketingCases {
+    display: flex;
+    align-items: center;
+    width: 60vw; }
+    .main_pageBody--marketingCases p {
+      font-family: "Nunito", sans-serif;
+      color: gray;
+      font-size: 1vw; }
+    .main_pageBody--marketingCases h3 {
+      font-family: "Nunito", sans-serif;
+      font-size: 2vw;
+      width: -webkit-fill-available;
+      display: flex;
+      align-items: center; }
+      .main_pageBody--marketingCases h3::after {
+        content: '/';
+        margin-left: 4vw;
+        font-size: 7vw;
+        font-weight: 100;
+        color: #80808075; }
+  .main_pageBody_PortafolioImg {
+    display: flex;
+    max-width: 100vw;
+    margin-top: 70px; }
+    .main_pageBody_PortafolioImg--img {
+      box-shadow: inset 0px 0px 0px 0px #0B9EF2;
+      transition: 700ms; }
+      .main_pageBody_PortafolioImg--img img {
+        max-width: 19.79vw;
+        filter: grayscale(100%);
+        transition: 700ms;
+        box-shadow: inset 0 -13px 0 #0B9EF2;
+        z-index: -20;
+        position: relative; }
+      .main_pageBody_PortafolioImg--img:hover {
+        box-shadow: inset 0px -10px 0px 0px #0B9EF2; }
+        .main_pageBody_PortafolioImg--img:hover img {
+          filter: grayscale(0%); }
+  .main_pageBody--services {
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    margin-top: 100px; }
+    .main_pageBody--services p {
+      font-family: "Nunito", sans-serif;
+      color: gray;
+      font-size: 1vw; }
+    .main_pageBody--services h3 {
+      font-family: "Nunito", sans-serif;
+      font-size: 2vw;
+      width: -webkit-fill-available;
+      display: flex;
+      align-items: center; }
+      .main_pageBody--services h3::after {
+        content: '/';
+        margin-left: 10vw;
+        font-weight: 100;
+        font-size: 7vw;
+        color: #80808075; }
+  .main_pageBody_servicesCards_cardsContainer {
+    list-style: none;
+    display: flex;
+    margin-block: 40px; }
+    .main_pageBody_servicesCards_cardsContainer_card {
+      display: flex; }
+      .main_pageBody_servicesCards_cardsContainer_card--icon {
+        border: solid;
+        border-radius: 100px;
+        border-color: #0B9EF2;
+        border-width: 2px;
+        padding: 40px;
+        color: #0B9EF2;
+        width: min-content;
+        height: min-content; }
+        .main_pageBody_servicesCards_cardsContainer_card--icon i {
+          font-size: 40px;
+          transition: 700ms;
+          line-height: normal;
+          font-family: Arial, Helvetica, sans-serif; }
+      .main_pageBody_servicesCards_cardsContainer_card--text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-inline: 20px; }
+        .main_pageBody_servicesCards_cardsContainer_card--text h3 {
+          font-family: "Nunito", sans-serif;
+          font-weight: 500; }
+        .main_pageBody_servicesCards_cardsContainer_card--text p {
+          font-family: "Nunito", sans-serif;
+          font-weight: 200; }
+      .main_pageBody_servicesCards_cardsContainer_card:hover .main_pageBody_servicesCards_cardsContainer_card--icon {
+        background-color: #0B9EF2; }
+        .main_pageBody_servicesCards_cardsContainer_card:hover .main_pageBody_servicesCards_cardsContainer_card--icon i {
+          color: white; }
+  .main_pageBody_review {
+    background-color: #111C2E;
+    width: 98.9vw;
+    height: 60vh;
+    z-index: -11;
+    display: flex;
+    margin-top: 91px;
+    flex-direction: column; }
+    .main_pageBody_review--whiteBarUp {
+      z-index: -8;
+      clip-path: polygon(0 0, 100% 0%, 100% 10%, 0 50%);
+      background-color: white;
+      width: 98.9vw;
+      height: 34vh;
+      transform: translateY(-27px); }
+    .main_pageBody_review--whiteBardown {
+      z-index: -8;
+      clip-path: polygon(0 100%, 100% 100%, 100% 50%, 0 90%);
+      background-color: white;
+      width: 98.9vw;
+      height: 34vh;
+      transform: translateY(27px); }
+    .main_pageBody_review--TextContainer {
+      width: 100%;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute; }
+      .main_pageBody_review--TextContainer p {
+        color: white;
+        font-family: "Nunito", sans-serif;
+        font-size: 3vw;
+        max-width: 50vw;
+        font-weight: 300; }
+      .main_pageBody_review--TextContainer span {
+        color: #0B9EF2;
+        font-family: "Nunito", sans-serif;
+        font-size: 2vw; }
+      .main_pageBody_review--TextContainer::after {
+        content: '';
+        z-index: -9;
+        clip-path: polygon(100% 100%, 22% 100%, 0 79%, 100% 0);
+        background-color: #0B9EF2;
+        width: 40vw;
+        height: 21vh;
+        position: absolute;
+        top: 34vh;
+        right: 0; }
+      .main_pageBody_review--TextContainer::before {
+        content: '';
+        z-index: -10;
+        clip-path: polygon(100% 100%, 22% 100%, 0 79%, 100% 0);
+        background-color: white;
+        width: 43vw;
+        height: 22vh;
+        position: absolute;
+        top: 33vh;
+        right: 0vw; }
+  .main_pageBody--Design {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px; }
+    .main_pageBody--Design h3 {
+      font-family: "Nunito", sans-serif; }
+    .main_pageBody--Design p {
+      font-family: "Nunito", sans-serif;
+      font-weight: 200; }
+  .main_pageBody--separatorPc {
+    margin-top: 50px; }
+  .main_pageBody_Portafolioimages {
+    display: flex;
+    margin-top: 50px; }
+    .main_pageBody_Portafolioimages--image {
+      background-color: gray;
+      z-index: 3; }
+      .main_pageBody_Portafolioimages--image img {
+        z-index: 2; }
+  .main_pageBody_clients {
+    margin-top: 70px; }
+    .main_pageBody_clients--clientContainer {
+      width: 60vw;
+      justify-content: space-between;
+      list-style: none;
+      display: flex;
+      margin-block: 30px;
+      padding-left: 0; }
+      .main_pageBody_clients--clientContainer li img {
+        filter: grayscale(100%);
+        opacity: 50%;
+        transition: 500ms; }
+        .main_pageBody_clients--clientContainer li img:hover {
+          filter: grayscale(0%);
+          opacity: 100%;
+          cursor: pointer; }
+
+.carruselreview {
+  display: flex;
+  max-width: 60vw;
+  align-items: center; }
+  .carruselreview--text {
+    margin-left: 10px; }
+    .carruselreview--text span {
+      font-size: 1.5vw;
+      font-family: "Nunito", sans-serif;
+      color: #0B9EF2; }
+    .carruselreview--text h4 {
+      font-size: 1vw;
+      font-family: "Nunito", sans-serif;
+      color: #57606D;
+      margin-top: 10px; }
+  .carruselreview img {
+    max-width: 10vw;
+    border-radius: 200px; }
+
+.carousel-item {
+  max-width: 60vw; }
+
+.carousel-control-prev {
+  display: none;
+  left: -94px; }
+
+.carousel-control-next {
+  right: -94px;
+  display: none; }
